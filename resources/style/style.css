@@ -1,2 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
 body {
-  background-color: yellow; }
+  font-size: 62.5%; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 1.6rem; }
+
+body {
+  font-family: "roboto", sans-serif; }
+
+.footer {
+  align-items: center;
+  background-color: #232f34;
+  color: #fff;
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  padding: 0.2rem; }
+  .footer__link {
+    color: #fff;
+    display: inline-block;
+    transition: all 0.2s; }
+    .footer__link:hover {
+      color: #f9aa33; }
+  .footer span:last-of-type {
+    display: inline-block;
+    padding: 0 0.4rem; }
+
+.heart {
+  color: rgba(223, 59, 135, 0.767); }
+
+.main {
+  height: calc(100vh - 1.5rem); }
