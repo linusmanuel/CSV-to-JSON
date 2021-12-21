@@ -1,0 +1,22 @@
+{
+  "name": "csv2jason",
+  "version": "1.0.0",
+  "description": "The objective of CSV2JSON is to reverse that process by converting a block of CSV text to JSON.",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass resources/frontend/main.scss resources/style/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linusmanuel/CSV-to-JSON.git"
+  },
+  "author": "Nicasio & Linus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linusmanuel/CSV-to-JSON/issues"
+  },
+  "homepage": "https://github.com/linusmanuel/CSV-to-JSON#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
