@@ -108,3 +108,7 @@ body {
   flex-direction: column;
   gap: 2rem;
   justify-content: center; }
+
+.section-output textarea {
+  color: #222;
+  padding: 2rem; }
