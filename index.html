@@ -17,7 +17,22 @@
 
   <body>
     <main class="main">
-      App
+      <section class="section-input">
+        <div class="section-input__group">
+          <textarea class="input__text input--csv" cols="30" rows="10"
+            placeholder="Type or paste CSV or JSON..."></textarea>
+          <input type="file" class="btn btn--upload">
+        </div>
+        <div class="btn-group">
+          <button class="btn btn--convert btn--csv">csv</button>
+          <button class="btn btn--convert btn--json">json</button>
+        </div>
+
+      </section>
+
+      <section class="section-output">
+        <textarea class="input__text input--json" cols="30" rows="10"></textarea>
+      </section>
     </main>
 
     <footer class="footer">

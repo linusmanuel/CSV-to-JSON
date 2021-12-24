@@ -1,3 +1,22 @@
 .main {
-  height: calc(100vh - 1.5rem);
+  display: flex;
+  font-size: $default-font-size;
+  justify-content: space-around;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 12rem 0;
+  height: calc(100vh - 3rem);
+  width: 100%;
+
+  textarea {
+    border-radius: 1rem;
+    color: $white;
+    font-family: inherit;
+    height: 33rem;
+    width: 38rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
