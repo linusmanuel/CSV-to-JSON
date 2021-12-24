@@ -1,2 +1,114 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
 body {
-  background-color: yellow; }
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: "roboto", sans-serif; }
+
+.footer {
+  align-items: center;
+  background-color: #232f34;
+  color: #fff;
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  padding: 0.2rem; }
+  .footer__link {
+    color: #fff;
+    display: inline-block;
+    transition: all 0.2s; }
+    .footer__link:hover {
+      color: #f9aa33; }
+  .footer span:last-of-type {
+    display: inline-block;
+    padding: 0 0.4rem; }
+
+.heart {
+  color: rgba(223, 59, 135, 0.767); }
+
+.btn {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  border: none;
+  border-radius: 5px; }
+  .btn--upload {
+    align-items: center;
+    background-color: #4a6572;
+    border-radius: 10px;
+    color: #fff;
+    gap: 1rem;
+    text-transform: uppercase; }
+    .btn--upload svg {
+      fill: #fff; }
+  .btn--convert {
+    background-color: #f9aa33;
+    align-items: center;
+    padding: 0 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a6572;
+    position: relative; }
+    .btn--convert::before {
+      content: ">";
+      position: absolute;
+      margin-right: 10px;
+      border-radius: 50%;
+      background-color: #4a6572;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      color: #fff;
+      left: 10%; }
+
+.main {
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: space-around;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 12rem 0;
+  height: calc(100vh - 3rem);
+  width: 100%; }
+  .main textarea {
+    border-radius: 1rem;
+    color: #fff;
+    font-family: inherit;
+    height: 33rem;
+    width: 38rem; }
+    .main textarea:focus {
+      outline: none; }
+
+.section-input {
+  display: flex;
+  gap: 2rem; }
+  .section-input__group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+    .section-input__group textarea {
+      background-color: #232f34;
+      padding: 1rem;
+      border: solid 10px #344955; }
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center; }
+
+.section-output textarea {
+  color: #222;
+  padding: 2rem; }

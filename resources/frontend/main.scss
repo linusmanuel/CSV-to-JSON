@@ -1,3 +1,13 @@
-body {
-  background-color: yellow;
-}
+@import "resources/frontend/abstrats/mixins";
+@import "resources/frontend/abstrats/variables";
+
+@import "resources//frontend/base/base";
+@import "resources/frontend/base/typograph";
+
+@import "resources//frontend/components/footer";
+@import "resources//frontend/components/button";
+
+@import "resources/frontend/pages/home";
+
+@import "resources/frontend/sections/section-input";
+@import "resources/frontend/sections/section-output";

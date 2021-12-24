@@ -1,0 +1,43 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  border: none;
+  border-radius: 5px;
+
+  &--upload {
+    align-items: center;
+    background-color: $color-primary-light;
+    border-radius: 10px;
+    color: $white;
+    gap: 1rem;
+    text-transform: uppercase;
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  &--convert {
+    background-color: $color-secondary;
+    align-items: center;
+    padding: 0 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $color-primary-light;
+    position: relative;
+
+    &::before {
+      content: ">";
+      position: absolute;
+      margin-right: 10px;
+      border-radius: 50%;
+      background-color: $color-primary-light;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      color: $white;
+      left: 10%;
+    }
+  }
+}
