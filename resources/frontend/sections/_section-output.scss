@@ -1,7 +1,13 @@
 .section-output {
+  &__group {
+    display: flex;
+    justify-content: space-between;
+  }
+
   textarea {
-    color: $black;
+    background-color: $color-primary;
+    color: $white;
     padding: 2rem;
-    // Código para demostração da secção será substituído em breve!
+    margin-bottom: 1rem;
   }
 }

@@ -23,15 +23,25 @@
             placeholder="Type or paste CSV or JSON..."></textarea>
           <input type="file" class="btn btn--upload">
         </div>
-        <div class="btn-group">
-          <button class="btn btn--convert btn--csv">csv</button>
-          <button class="btn btn--convert btn--json">json</button>
-        </div>
-
       </section>
 
+      <div class="btn-group">
+        <button class="btn btn--convert btn--csv">csv</button>
+        <button class="btn btn--convert btn--json">json</button>
+      </div>
       <section class="section-output">
         <textarea class="input__text input--json" cols="30" rows="10"></textarea>
+        <div class="section-output__group">
+          <button type="button" class="btn btn--download">
+            <img src="/resources/images/sprite-svg/download.svg">
+          </button>
+          <button type="button" class="btn btn--clear">
+            <img src="/resources/images/sprite-svg/recycle.svg">
+          </button>
+          <button type="button" class="btn btn--copy">
+            <img src="/resources/images/sprite-svg/upload.svg">
+          </button>
+        </div>
       </section>
     </main>
 
@@ -41,9 +51,7 @@
           <img src="/resources/images/sprite-svg/github.svg" />
         </a>
       </div>
-
       <p>Made with <span class="heart">&#10084</span> by</p>
-
       <div class="footer__link-group">
         <a href="https://www.linkedin.com/in/nicasio-marques-70320a182/" target="_blank" class="footer__link">
           Nicasio Marques

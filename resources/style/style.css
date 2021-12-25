@@ -22,6 +22,7 @@ body {
   background-color: #232f34;
   color: #fff;
   display: flex;
+  font-size: 1.6rem;
   gap: 0.6rem;
   justify-content: center;
   padding: 0.2rem; }
@@ -39,11 +40,17 @@ body {
   color: rgba(223, 59, 135, 0.767); }
 
 .btn {
+  align-items: center;
+  background-color: #f9aa33;
   display: flex;
   justify-content: center;
   height: 5rem;
   border: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 3rem; }
+  .btn:hover {
+    background-color: #fabf65; }
   .btn--upload {
     align-items: center;
     background-color: #4a6572;
@@ -54,13 +61,12 @@ body {
     .btn--upload svg {
       fill: #fff; }
   .btn--convert {
-    background-color: #f9aa33;
     align-items: center;
-    padding: 0 3rem;
+    color: #4a6572;
     text-transform: uppercase;
     font-weight: 700;
-    color: #4a6572;
-    position: relative; }
+    position: relative;
+    transition: all 0.2s; }
     .btn--convert::before {
       content: ">";
       position: absolute;
@@ -92,8 +98,7 @@ body {
       outline: none; }
 
 .section-input {
-  display: flex;
-  gap: 2rem; }
+  display: flex; }
   .section-input__group {
     display: flex;
     flex-direction: column;
@@ -109,6 +114,12 @@ body {
   gap: 2rem;
   justify-content: center; }
 
+.section-output__group {
+  display: flex;
+  justify-content: space-between; }
+
 .section-output textarea {
-  color: #222;
-  padding: 2rem; }
+  background-color: #344955;
+  color: #fff;
+  padding: 2rem;
+  margin-bottom: 1rem; }
