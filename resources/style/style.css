@@ -85,8 +85,8 @@ body {
   justify-content: space-around;
   max-width: 960px;
   margin: 0 auto;
+  margin-bottom: 5.5rem;
   padding: 12rem 0;
-  height: calc(100vh - 3rem);
   width: 100%; }
   .main textarea {
     border-radius: 1rem;
@@ -98,7 +98,8 @@ body {
       outline: none; }
 
 .section-input {
-  display: flex; }
+  max-width: 38rem;
+  max-height: 33rem; }
   .section-input__group {
     display: flex;
     flex-direction: column;
@@ -114,12 +115,14 @@ body {
   gap: 2rem;
   justify-content: center; }
 
-.section-output__group {
-  display: flex;
-  justify-content: space-between; }
-
-.section-output textarea {
-  background-color: #344955;
-  color: #fff;
-  padding: 2rem;
-  margin-bottom: 1rem; }
+.section-output {
+  max-width: 38rem;
+  max-height: 33rem; }
+  .section-output__group {
+    display: flex;
+    justify-content: space-between; }
+  .section-output textarea {
+    background-color: #344955;
+    color: #fff;
+    padding: 2rem;
+    margin-bottom: 1rem; }

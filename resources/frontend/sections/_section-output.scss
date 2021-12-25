@@ -1,4 +1,7 @@
 .section-output {
+  max-width: 38rem;
+  max-height: 33rem;
+
   &__group {
     display: flex;
     justify-content: space-between;
