@@ -26,6 +26,10 @@ body {
   gap: 0.6rem;
   justify-content: center;
   padding: 0.2rem; }
+  @media only screen and (max-width: 415px) {
+    .footer {
+      flex-direction: column;
+      padding: 0.5rem 0; } }
   .footer__link {
     color: #fff;
     display: inline-block;
@@ -88,6 +92,11 @@ body {
   margin-bottom: 5.5rem;
   padding: 12rem 0;
   width: 100%; }
+  @media only screen and (max-width: 900px) {
+    .main {
+      flex-direction: column;
+      max-width: 38rem;
+      padding: 8rem 0; } }
   .main textarea {
     border-radius: 1rem;
     color: #fff;
@@ -100,6 +109,12 @@ body {
 .section-input {
   max-width: 38rem;
   max-height: 33rem; }
+  @media only screen and (max-width: 900px) {
+    .section-input {
+      margin-bottom: 8rem; } }
+  @media only screen and (max-width: 415px) {
+    .section-input {
+      max-width: 100%; } }
   .section-input__group {
     display: flex;
     flex-direction: column;
@@ -114,10 +129,16 @@ body {
   flex-direction: column;
   gap: 2rem;
   justify-content: center; }
+  @media only screen and (max-width: 900px) {
+    .btn-group {
+      margin-bottom: 2rem; } }
 
 .section-output {
   max-width: 38rem;
   max-height: 33rem; }
+  @media only screen and (max-width: 415px) {
+    .section-output {
+      max-width: 100%; } }
   .section-output__group {
     display: flex;
     justify-content: space-between; }
