@@ -30,7 +30,7 @@ body {
     display: inline-block;
     transition: all 0.2s; }
     .footer__link:hover {
-      color: #f9aa33; }
+      color: #ffbd5b; }
   .footer span:last-of-type {
     display: inline-block;
     padding: 0 0.4rem; }
@@ -43,7 +43,12 @@ body {
   justify-content: center;
   height: 5rem;
   border: none;
-  border-radius: 5px; }
+  border-radius: 5px;
+  min-width: 12rem;
+  cursor: pointer;
+  transition: background-color ease-in-out .4s; }
+  .btn:hover {
+    background-color: #f9aa33; }
   .btn--upload {
     align-items: center;
     background-color: #4a6572;
@@ -52,9 +57,9 @@ body {
     gap: 1rem;
     text-transform: uppercase; }
     .btn--upload svg {
-      fill: #fff; }
+      color: #ffbd5b; }
   .btn--convert {
-    background-color: #f9aa33;
+    background-color: #ffbd5b;
     align-items: center;
     padding: 0 3rem;
     text-transform: uppercase;
@@ -63,20 +68,22 @@ body {
     position: relative; }
     .btn--convert::before {
       content: ">";
+      color: #ffbd5b;
+      font-size: 18px;
       position: absolute;
-      margin-right: 10px;
+      margin-right: 20px;
       border-radius: 50%;
       background-color: #4a6572;
       width: 20px;
       height: 20px;
       line-height: 20px;
-      color: #fff;
       left: 10%; }
 
 .main {
   display: flex;
   font-size: 1.6rem;
   justify-content: space-around;
+  align-items: center;
   max-width: 960px;
   margin: 0 auto;
   padding: 12rem 0;
@@ -111,4 +118,6 @@ body {
 
 .section-output textarea {
   color: #222;
-  padding: 2rem; }
+  padding: 2rem;
+  background-color: #232f34;
+  color: #fff; }
