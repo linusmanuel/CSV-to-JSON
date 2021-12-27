@@ -6,20 +6,13 @@
   height: 5rem;
   border: none;
   border-radius: 5px;
-<<<<<<< HEAD
   min-width: 12rem;
+  width: 100%;
   cursor: pointer;
-  transition: background-color ease-in-out .4s;
+  transition: background-color ease-in-out 0.4s;
 
   &:hover {
     background-color: $color-secondary-light;
-=======
-  cursor: pointer;
-  padding: 0 3rem;
-
-  &:hover {
-    background-color: lighten($color-secondary, 10%);
->>>>>>> develop
   }
 
   &--upload {

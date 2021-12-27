@@ -1,6 +1,6 @@
 .section-output {
   max-width: 38rem;
-  max-height: 33rem;
+  width: 100%;
 
   @media only screen and (max-width: 415px) {
     max-width: 100%;
@@ -8,19 +8,14 @@
 
   &__group {
     display: flex;
+    gap: 1rem;
     justify-content: space-between;
   }
 
   textarea {
-    background-color: $color-primary;
     color: $white;
     padding: 2rem;
-<<<<<<< HEAD
     background-color: $color-primary-dark-1;
-    color: $white;
-    // Código para demostração da secção será substituído em breve!
-=======
     margin-bottom: 1rem;
->>>>>>> develop
   }
 }
