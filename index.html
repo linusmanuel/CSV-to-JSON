@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Roboto:wght@100;400;700&display=swap"
-      rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&family=Roboto:wght@100;400;700&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="resources/style/style.css" />
-    <link rel="shorcut icon" href="resources/images/favicon.png" />
-    <title>CSV TO JSON</title>
-  </head>
+  <link rel="stylesheet" href="resources/style/style.css" />
+  <link rel="shorcut icon" href="resources/images/favicon.png" />
+  <title>CSV TO JSON</title>
+</head>
 
-  <body>
-    <main class="main">
-      <section class="section-input">
-        <div class="section-input__group">
-          <textarea class="input__text input--csv" cols="30" rows="10"
-            placeholder="Type or paste CSV or JSON..."></textarea>
-          <input type="file" class="btn btn--upload">
-        </div>
-        <div class="btn-group">
-          <button class="btn btn--convert btn--csv">csv</button>
-          <button class="btn btn--convert btn--json">json</button>
-        </div>
-
-      </section>
-
-      <section class="section-output">
-        <textarea class="input__text input--json" cols="30" rows="10"></textarea>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="footer__github">
-        <a href="https://github.com/linusmanuel/CSV-to-JSON" target="_blank">
-          <img src="/resources/images/sprite-svg/github.svg" />
-        </a>
+<body>
+  <main class="main">
+    <section class="section-input">
+      <div class="section-input__group">
+        <textarea required class="input__text input--csv" cols="30" rows="10"
+          placeholder="Type or paste CSV or JSON..."></textarea>
+        <input type="file" class="btn btn--upload">
       </div>
+    </section>
+    
+    <div class="btn-group">
+      <button class="btn btn--convert btn--csv">csv</button>
+      <button class="btn btn--convert btn--json">json</button>
+    </div>
 
-      <p>Made with <span class="heart">&#10084</span> by</p>
+    <section class="section-output">
+      <textarea readonly class="input__text input--json" cols="30" rows="10"></textarea>
+    </section>
+  </main>
 
-      <div class="footer__link-group">
-        <a href="https://www.linkedin.com/in/nicasio-marques-70320a182/" target="_blank" class="footer__link">
-          Nicasio Marques
-        </a>
-        <span>&</span>
-        <a href="https://www.linkedin.com/in/joao-lino-adao-manuel-643bb31ba/" target="_blank" class="footer__link">
-          João Lino
-        </a>
-      </div>
-    </footer>
-  </body>
+  <footer class="footer">
+    <div class="footer__github">
+      <a href="https://github.com/linusmanuel/CSV-to-JSON" target="_blank">
+        <img src="/resources/images/sprite-svg/github.svg" />
+      </a>
+    </div>
+
+    <p>Made with <span class="heart">&#10084</span> by</p>
+
+    <div class="footer__link-group">
+      <a href="https://www.linkedin.com/in/nicasio-marques-70320a182/" target="_blank" class="footer__link">
+        Nicasio Marques
+      </a>
+      <span>&</span>
+      <a href="https://www.linkedin.com/in/joao-lino-adao-manuel-643bb31ba/" target="_blank" class="footer__link">
+        João Lino
+      </a>
+    </div>
+  </footer>
+</body>
+<script src="./resources/app.js" ></script>
 
 </html>
