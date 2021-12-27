@@ -1,15 +1,25 @@
 .btn {
+  align-items: center;
+  background-color: $color-secondary;
   display: flex;
   justify-content: center;
   height: 5rem;
   border: none;
   border-radius: 5px;
+<<<<<<< HEAD
   min-width: 12rem;
   cursor: pointer;
   transition: background-color ease-in-out .4s;
 
   &:hover {
     background-color: $color-secondary-light;
+=======
+  cursor: pointer;
+  padding: 0 3rem;
+
+  &:hover {
+    background-color: lighten($color-secondary, 10%);
+>>>>>>> develop
   }
 
   &--upload {
@@ -26,13 +36,12 @@
   }
 
   &--convert {
-    background-color: $color-secondary;
     align-items: center;
-    padding: 0 3rem;
+    color: $color-primary-light;
     text-transform: uppercase;
     font-weight: 700;
-    color: $color-primary-light;
     position: relative;
+    transition: all 0.2s;
 
     &::before {
       content: ">";
@@ -46,6 +55,15 @@
       height: 20px;
       line-height: 20px;
       left: 10%;
+    }
+
+    &--download {
+    }
+
+    &--clear {
+    }
+
+    &--file {
     }
   }
 }

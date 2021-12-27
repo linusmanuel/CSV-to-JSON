@@ -1,6 +1,14 @@
 .section-input {
-  display: flex;
-  gap: 2rem;
+  max-width: 38rem;
+  max-height: 33rem;
+
+  @media only screen and (max-width: 900px) {
+    margin-bottom: 8rem;
+  }
+
+  @media only screen and (max-width: 415px) {
+    max-width: 100%;
+  }
 
   &__group {
     display: flex;
@@ -20,4 +28,8 @@
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
+
+  @media only screen and (max-width: 900px) {
+    margin-bottom: 2rem;
+  }
 }
