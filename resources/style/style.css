@@ -90,7 +90,6 @@ body {
   display: flex;
   font-size: 1.6rem;
   justify-content: space-around;
-  align-items: center;
   max-width: 960px;
   margin: 0 auto;
   margin-bottom: 5.5rem;
@@ -111,8 +110,7 @@ body {
       outline: none; }
 
 .section-input {
-  max-width: 38rem;
-  max-height: 33rem; }
+  max-width: 38rem; }
   @media only screen and (max-width: 900px) {
     .section-input {
       margin-bottom: 8rem; } }
