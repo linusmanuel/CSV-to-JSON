@@ -6,6 +6,7 @@ const btnClear = $(".btn--clear");
 
 const inputCSV = $(".input--csv");
 const inputJson = $(".input--json");
+const inputFile = $('.fileToConvert')
 
 class RequiredFieldError extends Error {
   constructor(fieldName = "") {
@@ -55,3 +56,14 @@ btnCSV.onclick = () => {
   }
   inputJson.value = convertJsonToCsv(inputCSV.value);
 };
+
+inputFile.onchange = evt => {
+  const file = evt.target.files[0]
+  const reader = new FileReader();
+  if (file) {
+    reader.readAsText(file, "UTF-8");
+    reader.onload = (evt) => inputCSV.value = evt.target.result;
+  }
+
+  reader.onerror = (evt) => alert("error reading file")
+}
