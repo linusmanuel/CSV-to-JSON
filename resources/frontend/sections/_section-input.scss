@@ -2,6 +2,7 @@
   max-width: 38rem;
   max-height: 33rem;
 
+
   @media only screen and (max-width: 900px) {
     margin-bottom: 8rem;
   }
@@ -19,6 +20,10 @@
       background-color: $color-primary-dark-1;
       padding: 1rem;
       border: solid 10px $color-primary;
+      
+      @media only screen and (max-width: 568px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -28,8 +33,11 @@
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
+  height: fit-content;
+  transform: translateY(100%);
 
   @media only screen and (max-width: 900px) {
+    transform: translateY(0);
     margin-bottom: 2rem;
   }
 }

@@ -14,6 +14,9 @@ body {
 a {
   text-decoration: none; }
 
+textarea {
+  resize: none; }
+
 body {
   font-family: "roboto", sans-serif; }
 
@@ -90,23 +93,26 @@ body {
   display: flex;
   font-size: 1.6rem;
   justify-content: space-around;
-  align-items: center;
   max-width: 960px;
   margin: 0 auto;
-  margin-bottom: 5.5rem;
   padding: 12rem 0;
-  width: 100%; }
+  width: 100%;
+  height: calc(100vh - 32px); }
   @media only screen and (max-width: 900px) {
     .main {
+      height: 100%;
       flex-direction: column;
       max-width: 38rem;
-      padding: 8rem 0; } }
+      padding: 8rem 1rem; } }
   .main textarea {
     border-radius: 1rem;
     color: #fff;
     font-family: inherit;
     height: 33rem;
     width: 38rem; }
+    @media only screen and (max-width: 568px) {
+      .main textarea {
+        width: 100%; } }
     .main textarea:focus {
       outline: none; }
 
@@ -127,14 +133,20 @@ body {
       background-color: #232f34;
       padding: 1rem;
       border: solid 10px #344955; }
+      @media only screen and (max-width: 568px) {
+        .section-input__group textarea {
+          width: 100%; } }
 
 .btn-group {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  justify-content: center; }
+  justify-content: center;
+  height: fit-content;
+  transform: translateY(100%); }
   @media only screen and (max-width: 900px) {
     .btn-group {
+      transform: translateY(0);
       margin-bottom: 2rem; } }
 
 .section-output {
@@ -142,10 +154,12 @@ body {
   width: 100%; }
   @media only screen and (max-width: 415px) {
     .section-output {
-      max-width: 100%; } }
+      max-width: 100%;
+      width: 100%; } }
   .section-output__group {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
     justify-content: space-between; }
   .section-output textarea {
     color: #fff;
