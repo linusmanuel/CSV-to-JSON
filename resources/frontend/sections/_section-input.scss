@@ -20,10 +20,6 @@
       background-color: $color-primary-dark-1;
       padding: 1rem;
       border: solid 10px $color-primary;
-      
-      @media only screen and (max-width: 568px) {
-        width: 100%;
-      }
     }
   }
 }
