@@ -8,8 +8,8 @@ export const button = {
 }
 
 export const input = {
-  csv: $(".input--csv"),
-  json: $(".input--json"),
+  in: $(".input--csv"),
+  out: $(".input--json"),
   file: $(".fileToConvert"),
 }
 
