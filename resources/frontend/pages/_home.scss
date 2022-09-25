@@ -2,17 +2,17 @@
   display: flex;
   font-size: $default-font-size;
   justify-content: space-around;
-  align-items: center;
   max-width: 960px;
   margin: 0 auto;
-  margin-bottom: 5.5rem;
   padding: 12rem 0;
   width: 100%;
+  height: calc(100vh - 32px);
 
   @media only screen and (max-width: 900px) {
+    height: 100%;
     flex-direction: column;
     max-width: 38rem;
-    padding: 8rem 0;
+    padding: 8rem 1rem;
   }
 
   textarea {
@@ -21,6 +21,10 @@
     font-family: inherit;
     height: 33rem;
     width: 38rem;
+
+    @media only screen and (max-width: 568px) {
+      width: 100%;
+    }
 
     &:focus {
       outline: none;
