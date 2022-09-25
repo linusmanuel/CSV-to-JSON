@@ -66,7 +66,8 @@ body {
     border-radius: 10px;
     color: #fff;
     gap: 1rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    opacity: 0; }
     .btn--upload svg {
       color: #ffbd5b; }
   .btn--convert {
@@ -88,6 +89,18 @@ body {
       height: 20px;
       line-height: 20px;
       left: 10%; }
+
+.btn-upload-wrapper {
+  background-color: #ffbd5b;
+  border-radius: 5px;
+  height: 5rem;
+  position: relative;
+  width: 100%; }
+  .btn-upload-wrapper img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
 
 .main {
   display: flex;
@@ -133,9 +146,6 @@ body {
       background-color: #232f34;
       padding: 1rem;
       border: solid 10px #344955; }
-      @media only screen and (max-width: 568px) {
-        .section-input__group textarea {
-          width: 100%; } }
 
 .btn-group {
   display: flex;
