@@ -18,6 +18,11 @@ export const download = (data, filename, type) => {
 
 export const loadFileContentOnField = (file, inputToSetContent) => {
   const reader = new FileReader();
+  const allowedExtensions = ["text/csv", "text/json"]
+  if (!allowedExtensions.includes(file?.type)) {
+    alert('Only allow follow extensions csv and json')
+    return
+  }
   if (file) {
     reader.readAsText(file, "UTF-8");
     reader.onload = evt => (inputToSetContent.value = evt.target.result);
