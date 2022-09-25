@@ -67,7 +67,14 @@
   border-radius: 5px;
   height: 5rem;
   position: relative;
+  transition: background-color ease-in-out 0.4s;
   width: 100%;
+
+
+  &:hover {
+    background-color: $color-secondary-light;
+    transition: background-color ease-in-out 0.4s;
+  }
 
   img {
     position: absolute;

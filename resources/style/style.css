@@ -95,7 +95,11 @@ body {
   border-radius: 5px;
   height: 5rem;
   position: relative;
+  transition: background-color ease-in-out 0.4s;
   width: 100%; }
+  .btn-upload-wrapper:hover {
+    background-color: #f9aa33;
+    transition: background-color ease-in-out 0.4s; }
   .btn-upload-wrapper img {
     position: absolute;
     left: 50%;
